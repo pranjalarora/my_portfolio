@@ -509,10 +509,159 @@ background-color: #ffffff;
 }
 
 
+/*skills*/
+.skills{
+    padding:100px 15px;
+    background-color: #ffffff;
+}
+.skills-content{
+	width:1000px;
+	list-style: none;
+	padding:0;
+}
+.text-uppercase{
+	text-transform: uppercase!important;
+}
 
 
+.skills .skills-content .li {
+	display:flex;
+    align-items: center;
+    justify-content: space-between;
+	font-size: 40px;
+	font-weight: 600;
+	margin-bottom: 40px;
+}
+.skills .skills-content .bar{
+	background:lightgrey;
+	display: block;
+	height:6px;
+	border:0.5px solid rgba(0,0,0,0.3);
+	border-radius: 3px;
+	overflow :hidden;
+	/*box-shadow: 0 0 10px #008080b3;*/
+}
+
+.skills .skills-content .bar span{
+	height:5px;
+	float:left;
+	background:#008080;
+}
+
+.html{
+	width:90%;
+	animation: html 3s;
+}
+.css{
+	width:70%;
+	animation: css 3s;
+}
+.javascript{
+    width:50%;
+    animation: javascript 3s;
+}
+
+.mysql{
+	width:65%;
+	animation: mysql 3s;
+}
+
+.cpp{
+	width:50%;
+	animation: cpp 3s;
+}
+
+.c{
+	width:50%;
+	animation: c 3s;
+}
+
+.blah{
+	width:80%;
+	animation: blah 3s;
+}
+
+@keyframes html{
+	0%{
+		width: 0%;
+	}
+	100%{
+		width:90%;
+	}
+}
+
+@keyframes css{
+	0%{
+		width: 0%;
+	}
+	100%{
+		width:70%;
+	}
+}
+@keyframes javascript{
+	0%{
+		width: 0%;
+	}
+	100%{
+		width:50%;
+	}
+}
+
+@keyframes mysql{
+	0%{
+		width: 0%;
+	}
+	100%{
+		width:65%;
+	}
+}
+@keyframes cpp{
+	0%{
+		width: 0%;
+	}
+	100%{
+		width:50%;
+	}
+}
+
+@keyframes c{
+	0%{
+		width: 0%;
+	}
+	100%{
+		width:50%;
+	}
+}
+
+@keyframes blah{
+	0%{
+		width: 0%;
+	}
+	100%{
+		width:80%;
+	}
+}
 
 
+.skills .skills-content .right span{
+    font-weight:600;
+    font-size:20px;
+}
 
+.skills .skills-content .right .line{
+	height:5px;
+	width:100%;
+	background:lightgrey;
+	position: relative;
+}
 
+.skills .skills-content .right .line::before{
+    content= "";
+    position: absolute;
+    height:100%;
+    width:80%;
+    left:0;
+    top:0;
+    background: #008080;
+}
 
